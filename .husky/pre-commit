@@ -1,2 +1,10 @@
 #!/bin/sh
-cd "$(dirname "$0")/.." && npx --no lint-staged --concurrent false
+echo "🔍 Running pre-commit checks..."
+
+# Run lint-staged for file-specific checks
+echo "📝 Checking staged files..."
+npx lint-staged --concurrent false
+
+# Run the exact same pipeline as CI
+echo "🔧 Running CI pipeline (same as GitHub Actions)..."
+pnpm ci-pipeline

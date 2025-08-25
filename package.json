@@ -9,6 +9,7 @@
     "format": "next lint --fix && prettier '**/*.{json,yaml,ts,tsx}' --write --ignore-path .gitignore",
     "check-types": "tsc --noEmit --pretty",
     "ci": "pnpm lint && pnpm check-types && pnpm build",
+    "ci-pipeline": "echo '🔍 Running CI Pipeline...' && pnpm lint && pnpm check-types && pnpm build && echo '✅ CI Pipeline passed!'",
     "prepare": "husky"
   },
   "engines": {
