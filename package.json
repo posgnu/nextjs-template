@@ -40,7 +40,7 @@
     "@heroui/theme": "^2.4.20",
     "@svgr/webpack": "^8.1.0",
     "@tanstack/eslint-plugin-query": "^5.65.0",
-    "@types/node": "^20",
+    "@types/node": "^24",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.4.20",
